@@ -1,0 +1,76 @@
+main
+{
+  min-height: 80vh;
+}
+
+/* Global card styles */
+.uniform-card {
+  height: 400px; /* Set a fixed height for all cards */
+  display: flex;
+  flex-direction: column;
+}
+
+.uniform-card .card-img-top {
+  object-fit: cover;
+  height: 200px; /* Set a fixed height for the image */
+  width: 100%; /* Make sure it fills the card width */
+}
+
+.uniform-card .card-body {
+  flex: 1; /* Make sure the card body fills the remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure content is spread evenly */
+
+}
+
+.uniform-card .card-title {
+  text-align: center;
+  font-size: 1.2rem; /* Adjust the title size */
+}
+
+.uniform-card .card-text {
+  text-align: center;
+  margin-top: auto; /* Push the text to the bottom */
+}
+
+.container {
+  max-width: 500px; /* Set your desired max width */
+  margin: 0 auto;    /* Center the container */
+  padding: 0 15px;  /* Optional padding */
+}
+
+.card {
+  width: 250px; /* or any fixed width you prefer */
+  height: 300px; /* or any fixed height you prefer */
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adjusts content positioning */
+}
+
+.row-custom-bg {
+  background-color: #f8f9fa; /* Replace with your desired color */
+  padding: 15px; /* Optional: add padding if needed */
+}
+.custom-carousel-control-prev,
+.custom-carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border: none;
+    font-size: 2rem; /* Bigger arrow size */
+    z-index: 10;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.custom-carousel-control-prev {
+    left: 10px;
+}
+
+.custom-carousel-control-next {
+    right: 10px;
+}
